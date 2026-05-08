@@ -16,6 +16,10 @@ class GradientContainer extends StatelessWidget {
     super.key,
   });
 
+void rollDice(){
+
+}
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -27,7 +31,18 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: Center(
-        child: StyledText('Hello world!'),
+        child: Column(
+          children: [
+            Image.asset(
+              'assets/images/dice-1.png',
+              width: 300,
+            ),
+            TextButton(
+              onPressed: () {},
+              child: Text("Roll Dice"),
+            ),
+          ],
+        ),
       ),
     );
   }
